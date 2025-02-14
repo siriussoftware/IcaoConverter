@@ -6,8 +6,9 @@
     {
         static void Main(string[] args)
         {
-            string code = ICAOConverter.icao_to_n("a45935");
+            ICAOConverter convert = new ICAOConverter();
+            string code = convert.IcaoToN("c0624c");
             Console.WriteLine(code);
-            Console.WriteLine(ICAOConverter.NToIcao(code));
+            Console.WriteLine(convert.NToIcao(code));
         }
     }
